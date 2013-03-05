@@ -9,7 +9,5 @@ actually enabled in vim
 
 Works with
 ----------
-- {,Ba,K,Z}sh
 - Awk
-- Python
 - Perl
