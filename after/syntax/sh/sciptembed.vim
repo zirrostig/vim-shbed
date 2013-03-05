@@ -1,4 +1,5 @@
 "Embeding AWK syntax highlighting in shell scripts
+"Found with ':help sh-embed'
 "
 "Author:    Zachary Stigall
 "Email:     zirrostig <at> lanfort.org
@@ -6,7 +7,7 @@
 "License:   VIM
 
 if exists("b:current_syntax")
-    finish
+    unlet "b:current_syntax"
 endif
 
 syn include @AWKScript syntax/awk.vim
