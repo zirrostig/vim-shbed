@@ -10,4 +10,3 @@ actually enabled in vim
 Works with
 ----------
 - Awk
-- Perl
