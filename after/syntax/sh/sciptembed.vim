@@ -15,10 +15,3 @@ syn region AWKScriptCode matchgroup=AWKCommand start=+[=\\]\@<!'+ skip=+\\'\\+ e
 syn region AWKScriptEmbedded matchgroup=AWKCommand start=+\<awk\>+ skip=+\\$+ end=+[=\\]\@<!'+me=e-1 contains=@shIdList,@shExprList2 nextgroup=AWKScriptCode
 syn cluster shCommandSubList add=AWKScriptEmbedded
 hi def link AWKCommand Type
-
-syn include @PerlScript syntax/perl.vim
-syn region PerlScriptCode matchgroup=PerlCommand start=+[=\\]\@<!'+ skip=+\\'\\+ end=+'+ contains=@PerlScript contained
-syn region PerlScriptEmbedded matchgroup=PerlCommand start=+\<perl\>+ skip=+\\$+ end=+[=\\]\@<!'+me=e-1 contains=@shIdList,@shExprList2 nextgroup=PerlScriptCode
-syn cluster shCommandSubList add=PerlScriptEmbedded
-hi def link PerlCommand Type
-
